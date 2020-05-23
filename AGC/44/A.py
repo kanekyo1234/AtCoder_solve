@@ -1,3 +1,6 @@
+t=int(input())
+for i in range(t):
+    n,a,b,c,d=map(int,input().split())
 n,A,B,C=map(int,input().split())
 
 l=[int(input()) for _ in range(n)]
