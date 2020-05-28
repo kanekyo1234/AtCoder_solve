@@ -10,3 +10,4 @@ for i in range(m):
         n_ans[b-1] = 0
 print(sum(n_ans))
 
+knai

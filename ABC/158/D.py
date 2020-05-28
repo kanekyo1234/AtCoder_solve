@@ -4,9 +4,10 @@ c=0
 n=1
 q=int(input())
 for i in range(q):
-    a=input().strip()
-    a=list(a)
+    a=list(map(int,input().split()))
     #print(a)
+    a=list(a)
+    print(a)
     if int(a[0])==1:
         #print("DFGHJ")
         c=+1

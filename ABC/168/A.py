@@ -6,4 +6,4 @@ if int(s[-1]) in a:
 elif int(s[-1]) in b:
     print("pon")
 else:
-    print("bon")
+    print("bon"

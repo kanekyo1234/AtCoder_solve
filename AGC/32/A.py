@@ -2,14 +2,11 @@ n=int(input())
 b=list(map(int,input().split()))
 ba=[]#右からの距離を足したやつ
 for i in range(n):
-    ba.append(b[i]+n-1-i)
-print(ba)
-ans=[]
-ans.append(1)
-for i in range(n-1,-1,-1):
-    for j in range(i,-1,-1):
-        if len(ans)<b[i]:
-            ans.append()
-
-
-    
+    if len(ba)<b[i]-1:
+        print(-1)
+        break
+    else:
+        ba.insert(b[i]-1,b[i])
+else:
+    for i in range(n):
+        print(ba[i])
