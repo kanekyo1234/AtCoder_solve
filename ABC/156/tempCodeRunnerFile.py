@@ -1,0 +1,1 @@
+pow(mother, -1, mod) % mod
