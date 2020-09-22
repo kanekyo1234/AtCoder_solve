@@ -1,7 +1,3 @@
-
-n, m = map(int, input().split())
-
-
 def make_divisors(n):
     divisors = []
     for i in range(1, int(n**0.5)+1):
@@ -13,18 +9,12 @@ def make_divisors(n):
     divisors.sort()
     return divisors
 
+ans=0
+n = int(input())
+divisors = make_divisors(n)
+for i in divisors[1:]:
+    i -= 1
+    if n % i == n//i:
+        ans += i
 
-b = make_divisors(m)
-# print(b)
-a = m//n
-# print(a)
-ans = 0
-for i in b:
-    if i <= a:
-        ans = i
 print(ans)
-
-# for i in range(1, a+1):
-#     if a % i == 0 and m % i == 0:
-#         ans = i
-# print(ans)
