@@ -13,14 +13,20 @@ if "D" in c:
     y = 1
 s = [list(input()) for _ in range(9)]
 ans = ""
+if a == 0:
+    x = 1
+if a == 8:
+    x = -1
+if b == 8:
+    y = -1
+if b == 0:
+    y = 1
 
 for i in range(4):
     ans += s[b][a]
-    # print(a, b)
+    a, b = a+x, b+y
     if a == 0 or a == 8:
         x *= -1
-
     if b == 0 or b == 8:
         y *= -1
-    a, b = a+x, b+y
 print(ans)
