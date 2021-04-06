@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="webp-2019-1.css">
+    <title>kadai</title>
+</head>
+<body>
+    <h1>
+        <center>
+            わかった気になれる！正規表現
+        </center>
+    </h1>
+    <h2>
+            １.正規表現とは
+    </h2>
+       正規表現とは、いくつかの文字列を一つの形式で表現するた目の表現方法なんだ
+その「一つの形式で表現するため」に、いくつかのある文字に対して特別な意味を与えているんだ。 
+以下に述べる文字がその役割を担ってて。すべて半角で書くんだ。 
+例えば"dfgnbvfghnbvcfgb"という文字にaはあるのかなどを簡単に探すことができるよ
+簡単にいえば下記の３つにまとめられるよ
+        <ol element class="box7">
+            
+           <p> <li>なんとなくの感じで文字列の指定ができるよ</li>
+            <li>文字列を特定する際に用いるよ</li>
+            <li>探したい文字列を探してくれるよ</li>
+           </p>
+        </ol>
+       
+
+    <ol>
+    
+    </ol>
+
+    
+    <p>
+
+    </p>
+    <h2>
+        ２.正規表現の簡単な一覧
+    </h2>
+    <table>
+        <tbody>
+            <p>
+                <tr>
+                    <th>文字</th>
+                    <th>意味</th>
+                    <th>使用例</th>
+                    <th>マッチ例</th>
+                </tr>
+               <tr>
+                    <td>.</td>
+                    <td>任意の1文字</td>
+                    <td>A.C</td>
+                    <td>ABC、A1C、AあC </td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>直前のパターンの0回以上繰り返し（最長一致）</td>
+                    <td>ABC*</td>
+                    <td>AB、ABC、ABCCCCC</td>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>直前のパターンの1回以上繰り返し（最長一致）</td>
+                    <td>ABC+</td>
+                    <td>ABC、ABCCCCCC</td>
+                </tr>
+                <tr>
+                    <td>?</td>
+                    <td>直前のパターンの0～1回繰り返し（最長一致）</td>
+                    <td>ABC? </td>
+                    <td>AB、ABC </td>
+                </tr>
+                <tr>
+                    <td>～|～</td>
+                    <td>|の左右の文字列のいずれか（～または～）</td>
+                    <td>ABC|XYZ</td>
+                    <td>ABC、XYZ </td>
+                </tr>
+                <tr>
+                    <td>[^～] </td>
+                    <td>～に含まれない1文字</td>
+                    <td>[^ABC] </td>
+                    <td>A、B、C 以外のいずれか</td>
+                </tr>
+                <tr>
+                    <td>[～] </td>
+                    <td>～のいずれか1文字</td>
+                    <td>[ABC]</td>
+                    <td>A、B、C のいずれか</td>
+                </tr>
+         
+                <tr>
+                    <td>*?</td>
+                    <td>直前のパターンの0回以上繰り返し（最短一致</td>
+                    <td>ABC+?</td>
+                    <td> ABC</td>
+                </tr>
+                <tr>
+                    <td>+?</td>
+                    <td>直前のパターンの1回以上繰り返し（最短一致）</td>
+                    <td>ABC+?</td>
+                    <td>ABC</td>
+                </tr>
+                <tr>
+                    <td>??</td>
+                    <td>直前のパターンの0～1回繰り返し（最短一致）</td>
+                    <td>ABC??</td>
+                    <td>AB </td>
+                </tr>
+            </p>
+        </tbody>
+    </table>
+    <h2>
+            ３.参照一覧
+    </h2>
+    <ul>
+        <li>
+        <a href="https://www.megasoft.co.jp/mifes/seiki/meta.html">
+            正規表現メタ文字一覧
+        </a>
+        </li>
+        <li>
+        <a href="https://www.mnet.ne.jp/~nakama/">
+            サルにもわかる正規表現入門
+        </a>
+        </li>
+        <li>
+        <a href="https://naifix.com/css-box-design/">
+            CSSで作るおしゃれなボックス
+        </a>
+        </li>
+    </ul>
+
+
+
+</body>
+
+</html>

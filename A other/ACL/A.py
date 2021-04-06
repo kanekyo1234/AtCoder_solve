@@ -1,5 +1,7 @@
 a = int(input())
 ans = ""
 for i in range(a):
-    ans += "ACL"
+      ans += "ACL"
 print(ans)
+
+perinag
